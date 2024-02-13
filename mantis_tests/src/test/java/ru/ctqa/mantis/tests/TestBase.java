@@ -1,7 +1,7 @@
 package ru.ctqa.mantis.tests;
 
-import org.junit.jupiter.api.BeforeEach;
 import ru.ctqa.mantis.manager.ApplicationManager;
+import org.junit.jupiter.api.BeforeEach;
 
 import java.io.FileReader;
 import java.io.IOException;

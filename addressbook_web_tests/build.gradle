@@ -6,8 +6,29 @@ group = 'org.example'
 version = '1.0-SNAPSHOT'
 
 repositories {
+    mavenLocal()
     maven {
         url "http://nexus.gazprom-neft.local:8080/repository/maven2-maven-external-dso/"
+        allowInsecureProtocol = true
+    }
+    maven {
+        url "http://nexus.gazprom-neft.local:8080/repository/maven2-gradle-external-dso/"
+        allowInsecureProtocol = true
+    }
+    maven {
+        url "http://nexus.gazprom-neft.local:8080/repository/maven2-wso2-public-external-dso/"
+        allowInsecureProtocol = true
+    }
+    maven {
+        url "http://nexus.gazprom-neft.local:8080/repository/maven2-whitelist-dso/"
+        allowInsecureProtocol = true
+    }
+    maven {
+        url "http://nexus.gazprom-neft.local:8080/repository/maven2-sbt-external-dso/"
+        allowInsecureProtocol = true
+    }
+    maven {
+        url "http://nexus.gazprom-neft.local:8080/repository/go-golang-external-dso/"
         allowInsecureProtocol = true
     }
 }

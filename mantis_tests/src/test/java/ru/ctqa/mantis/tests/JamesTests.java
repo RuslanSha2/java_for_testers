@@ -1,7 +1,7 @@
 package ru.ctqa.mantis.tests;
 
-import org.junit.jupiter.api.Test;
 import ru.ctqa.mantis.common.CommonFunctions;
+import org.junit.jupiter.api.Test;
 
 public class JamesTests extends TestBase {
 

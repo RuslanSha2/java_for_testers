@@ -1,12 +1,11 @@
 package ru.ctqa.mantis.manager;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import ru.ctqa.mantis.manager.developermail.AddUserResponse;
+import ru.ctqa.mantis.manager.developermail.GetIdsResponse;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeUtility;
 import okhttp3.*;
-import ru.ctqa.mantis.manager.developermail.AddUserResponse;
-import ru.ctqa.mantis.manager.developermail.GetIdsResponse;
 import ru.ctqa.mantis.manager.developermail.GetMessageResponse;
 import ru.ctqa.mantis.model.DeveloperMailUser;
 

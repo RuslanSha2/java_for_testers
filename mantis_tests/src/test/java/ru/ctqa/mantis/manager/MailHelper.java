@@ -1,7 +1,7 @@
 package ru.ctqa.mantis.manager;
 
-import jakarta.mail.*;
 import ru.ctqa.mantis.model.MailMessage;
+import jakarta.mail.*;
 
 import java.io.IOException;
 import java.time.Duration;

@@ -4,7 +4,6 @@ import org.openqa.selenium.io.CircularOutputStream;
 import org.openqa.selenium.os.CommandLine;
 
 public class JamesCliHelper extends HelperBase {
-
     public JamesCliHelper(ApplicationManager manager) {
         super(manager);
     }

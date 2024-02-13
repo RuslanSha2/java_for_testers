@@ -1,20 +1,21 @@
 package ru.ctqa.mantis.tests;
 
+import ru.ctqa.mantis.common.CommonFunctions;
+import ru.ctqa.mantis.model.DeveloperMailUser;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import ru.ctqa.mantis.common.CommonFunctions;
-import ru.ctqa.mantis.model.DeveloperMailUser;
 
 import java.time.Duration;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-public class UserRegistrationsTests extends TestBase {
+public class UserTests extends TestBase {
 
     public static Stream<String> randomUser() {
+//        return Stream.of(new String("user1"));
         return Stream.of(CommonFunctions.randomString(8));
     }
 
