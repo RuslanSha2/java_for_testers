@@ -5,6 +5,9 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeDriverService;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.Properties;
@@ -27,6 +30,10 @@ public class ApplicationManager {
                 driver = new FirefoxDriver();
             } else if ("chrome".equals(browser)) {
                 driver = new ChromeDriver();
+            } else if ("edge".equals(browser)) {
+                var edgeOpt = new EdgeOptions();
+                edgeOpt.addArguments("headless");
+                driver = new EdgeDriver(edgeOpt);
             } else {
                 throw new IllegalArgumentException(String.format("Unknown browser %s", browser));
             }
